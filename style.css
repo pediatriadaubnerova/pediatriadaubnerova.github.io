@@ -73,15 +73,6 @@
   color: white;
 }
 
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-
 .fotky img {
   display: block;
   margin-left: auto;
@@ -94,6 +85,7 @@
   padding-bottom: 3%;
   padding-right: 10%;
   padding-left: 10%;
+  height: 80vh;
 }
 
 .fotky h1, h2{
