@@ -95,12 +95,12 @@
   padding-left: 10%;
 }
 
-.ktosme h1, h2{
+.fotky h1, h2{
   text-align: center;
   color: #03a668;;
 }
 
-.ktosme h1 {
+.fotky h1 {
   background-color: #03a668;
   color: white;
   margin: 0;
@@ -109,10 +109,12 @@
   font-size: 300%;
 }
 
-.ktosme h2 {
+.fotky h2 {
   font-size: 200%;
   padding-bottom: 3%;
   border-bottom: 3px solid #03a668;
   margin-left: 8%;
   margin-right: 8%;
+  margin-top: 0;
+  margin-bottom: 10%;
 }
