@@ -123,7 +123,7 @@ h1 {
   background-image: url(./nemocnica.jpg);
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .kontakt .jumbotron {
@@ -135,8 +135,8 @@ h1 {
 
   margin: 0;
   padding: 0;
-  margin: 10% auto 10% auto;
-  padding: 3% 5% 5% 5%;
+  margin: 12% auto 10% auto;
+  padding: 3% 10% 5% 10%;
   border-radius: 15px;
 }
 
