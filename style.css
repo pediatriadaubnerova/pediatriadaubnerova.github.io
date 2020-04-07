@@ -14,7 +14,7 @@
 }
 
 
-.jumbotron {
+.header .jumbotron {
   background-image: linear-gradient(rgba(0, 201, 125,0.65), rgba(0, 201, 125,0.65));
   position: absolute;
   width: 80%;
@@ -119,21 +119,67 @@ h1 {
   margin-bottom: 10%;
 }
 
-.kontakt .col-sm-6 {
+.kontakt {
+  background-image: url(./nemocnica.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.kontakt .jumbotron {
+  width: 100%;
+  height: 500px;
+
+  background: transparent;
+  background-image: linear-gradient(rgba(0, 201, 125,0.85), rgba(0, 201, 125,0.85));
+
   margin: 0;
   padding: 0;
+  margin: 10% auto 10% auto;
+  padding: 3% 5% 5% 5%;
+  border-radius: 15px;
+}
+
+.kontakt .col-sm-6 .col-sm-3 {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.kontakt p {
+  text-align: center;
+  color: white;
+  font-size: 180%;
+  margin: 1% auto 3% auto;
+}
+
+.kontakt a {
+  color: white;
+  font-size: 100%;
+}
+
+.kontakt h2 {
+  text-align: center;
+  color: #03a668;
+  padding: 1% 0 1% 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .kontakt .right {
+    border-left: 3px solid #03a668;
+  }
 }
 
 .mapouter {
   position:relative;
   text-align:right;
-  height:500px;
-  width:100%;
+  height: 87%;
+  width: 100%;
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;
+  height: 87%;
   width:100%;
 }
 
