@@ -34,8 +34,8 @@
 }
 
 .navbar-default .navbar-brand {
-  background-color: white;
-  color: #00c97d;
+  background-color: transparent;
+  color: #03a668;
   font-size: 200%;
 }
 
@@ -47,6 +47,7 @@
   background-color: white;
   border-width: 0;
   border: 0;
+  border-bottom: 3px solid #03a668 !important;
 }
 
 .navbar-fixed-top {
@@ -63,13 +64,13 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-  background-color: white;
+  background-color: transparent;
   color: #03a668;
   font-size: 120%;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #00c97d;
+  background-color: #03a668;
   color: white;
 }
 
@@ -153,7 +154,11 @@ h1 {
   text-align: center;
   color: white;
   font-size: 180%;
-  margin: 1% auto 3% auto;
+  margin: 1% auto 0 auto;
+}
+
+.kontakt .bottom {
+  margin: 0 auto 3% auto;
 }
 
 .kontakt a {
@@ -186,6 +191,11 @@ h1 {
   width:100%;
 }
 
+@media (max-width: 1200px) {
+  .kontakt a {
+    display: block;
+  }
+}
 
 @media (max-width: 1144px) {
     .navbar-header:not(.in) {
