@@ -273,7 +273,11 @@ h1 {
   font-weight: bold;
 }
 
-@media (max-width: 1000px)  {
+.mails {
+  margin: 0 3%;
+}
+
+@media (max-width: 1225px)  {
   .list-group a {
     display: block;
     float: none;
