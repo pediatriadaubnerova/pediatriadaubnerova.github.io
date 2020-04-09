@@ -232,6 +232,7 @@ h1 {
 }
 
 .panel, .panel-default, .panel-heading {
+  -webkit-appearance: none;
   border: none;
   box-shadow: none;
 }
