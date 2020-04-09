@@ -15,7 +15,7 @@
 
 
 .header .jumbotron {
-  background-image: linear-gradient(rgba(0, 201, 125,0.65), rgba(0, 201, 125,0.65));
+  background-image: linear-gradient(rgba(0, 196, 121,0.65), rgba(0, 196, 121,0.65));
   position: absolute;
   width: 80%;
 
@@ -174,7 +174,7 @@ h1 {
 
   margin: 0;
   padding: 0;
-  margin: 12% auto 10% auto;
+  margin: 20% auto 10% auto;
   padding: 3% 10% 5% 10%;
   border-radius: 15px;
 }
@@ -226,6 +226,43 @@ h1 {
     display: block;
   }
 } */
+
+.ine-kontakty .panel-group {
+  margin: 3%;
+}
+
+.panel-heading a {
+  text-decoration: none;
+  text-align: center;
+  color: #03a668;
+  background-color: transparent;
+  font-size: 150%;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2% 1%;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  border: 1px solid #03a668;
+}
+
+/* .panel-heading a:hover {
+  background-color: #03a668;
+  color: white;
+} */
+
+.panel-group .panel-heading {
+  color: #03a668;
+  background-color: white;
+  border: 1px solid #03a668;
+  padding: 0;
+  background: transparent;
+  border: none;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+}
+
+.list-group a {
+  float: right;
+}
 
 @media (max-width: 1144px) {
     .navbar-header:not(.in) {
