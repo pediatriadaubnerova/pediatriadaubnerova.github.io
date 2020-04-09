@@ -231,7 +231,7 @@ h1 {
   margin: 3%;
 }
 
-.panel, .panel-default {
+.panel, .panel-default, .panel-heading {
   border: none;
   box-shadow: none;
 }
