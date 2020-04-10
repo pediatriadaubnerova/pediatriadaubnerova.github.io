@@ -243,6 +243,7 @@ h1 {
   color: #03a668;
   background-color: transparent;
   font-size: 150%;
+  font-weight: bold;
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -251,10 +252,10 @@ h1 {
   border: 1px solid #03a668;
 }
 
-/* .panel-heading a:hover {
+.panel-heading a:hover, .panel-heading a.active {
   background-color: #03a668;
   color: white;
-} */
+}
 
 .panel-group .panel-heading {
   color: #03a668;
