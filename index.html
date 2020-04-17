@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 
     <title>Detská ambulancia Daubnerová</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="600">
     <!-- Navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -24,7 +22,7 @@
           </button>
           <a href="#" class="navbar-brand"><strong>Pediatria Daubnerová</strong></a>
         </div>
-        <div class="collapse navbar-toggleable-sm navbar-collapse navbar-right" id="myNavbar">
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#ktosme">Kto sme</a></li>
@@ -35,8 +33,9 @@
       </div>
     </nav>
 
-    <a name="home"></a>
-    <div class="row">
+    <!-- navbar-toggleable-sm navbar-right -->
+
+    <div id="home" class="row">
       <div class="header">
         <div class="col-sm-6">
           <div class="jumbotron">
@@ -51,8 +50,7 @@
     </div>
 
     <!-- Kto sme row -->
-    <a name="ktosme"></a>
-    <div class="row fotky">
+    <div id="ktosme" class="row fotky">
       <h1><strong>Kto sme</strong></h1>
       <div class="col-sm-6 left">
         <h2>MUDr. Adriana Daubnerová</h2>
@@ -65,8 +63,7 @@
     </div>
 
     <!-- Kontakt a mapa -->
-    <a name="kontakt"></a>
-    <div class="row mapa">
+    <div id="kontakt" class="row mapa">
       <!-- <h1><strong>Kontakt</strong></h1> -->
       <div class="col-sm-3"></div>
 
@@ -96,16 +93,20 @@
       <div class="col-sm-2"></div>
     </div>
 
-    <!-- Kalendar ockovani -->
-    <a name="kalendar"></a>
-    <div class="">
+    <!-- Kalendar ockovani a rady -->
+    <!-- <div id="kalendar" class="row kalendar">
+      <div class="col-sm-2"></div>
 
-    </div>
+      <div class="col-sm-8">
+        <img src="./kalendar.png" width="100%">
+      </div>
+
+      <div class="col-sm-2"></div>
+    </div> -->
 
 
     <!-- Uzitocne kontakty -->
-    <a name="uzitocne-kontakty"></a>
-    <div class="row ine-kontakty">
+    <div id="uzitocne-kontakty" class="row ine-kontakty">
       <h1><strong>Užitočné kontakty</strong></h1>
       <div class="col-sm-2"></div>
 
@@ -116,7 +117,8 @@
               <a data-toggle="collapse" class="panel-title" href="#collapse1">Kontakty na odborné ambulancie</a>
             </div>
             <div id="collapse1" class="panel-collapse collapse">
-              <ul class="list-group">
+              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+              <ul class="list-group" id="myList">
                 <li class="list-group-item">Pohotovosť pre deti a dorast Žilina, V.Spanyola 43 <a href="tel:+421415110522">041/ 5110522</a> </li>
                 <li class="list-group-item">FNsP Žilina, V. Spanyola 43, Žilina- ústredňa <a href="tel:+421415110111">041/ 5110111</a></li>
                 <li class="list-group-item">Detské oddelenie - príjmová amb. FNsP -Žilina <a href="tel:+421415110509">041/ 5110509</a></li>
@@ -162,9 +164,57 @@
 
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Change header background when not collapsed -->
+    <script>
+      $('.panel-heading').on('click', function(e) {
+        $(this).toggleClass('active');
+      });
+    </script>
+    <!-- List search -->
+    <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>
 
+
+<!-- <table>
+  <th>Očkovací kalendár</th>
+  <tr>
+    <td>Ročník narodenia</td>
+    <td>Vek</td>
+    <td>Druh očkovania</td>
+    <td>Typ očkovanie</td>
+  </tr>
+  <tr>
+    <td>2020</td>
+    <td>
+      <table>
+        <tr><td>v 3. mesiaci života</td></tr>
+        <tr><td>v 5. mesiaci života</td></tr>
+        <tr><td>v 11. mesiaci života</td></tr>
+      </table>
+    </td>
+    <td>záškrt, tetanus, čierny kašeľ (acelulár. vakcína), vírusová hepatitída B, invazívne hemofilové nákazy</td>
+    <td>
+      <table>
+        <tr><td>I. dávka (základné očkovanie)</td></tr>
+        <tr><td>II. dávka (základné očkovanie)</td></tr>
+        <tr><td>III. dávka (základné očkovanie)</td></tr>
+      </table>
+    </td>
+  </tr>
+</table> -->
 
 <!--
 <li class="list-group-item">ORL-súkromná krčná amb.-MUDr. Mazúr <a>041/ 7235965</a> <a href="http://www.krcne.szm.com" target="_blank">www.krcne.szm.com</a></li>

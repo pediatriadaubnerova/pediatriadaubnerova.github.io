@@ -13,6 +13,14 @@
   color: white;
 }
 
+body {
+  position: relative;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
 
 .header .jumbotron {
   background-image: linear-gradient(rgba(0, 196, 121,0.65), rgba(0, 196, 121,0.65));
@@ -37,6 +45,11 @@
   background-color: transparent;
   color: #03a668;
   font-size: 200%;
+}
+
+.navbar-default .navbar-brand:hover {
+  background-color: transparent;
+  color: #03a668;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -67,11 +80,22 @@
   background-color: transparent;
   color: #03a668;
   font-size: 120%;
+
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active  {
+  background-color: #03a668;
+  color: white;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #03a668;
   color: white;
+}
+
+.navbar .container-fluid {
+  padding-right: 0;
 }
 
 .fotky img {
@@ -142,7 +166,7 @@ h1 {
   font-size: 100%;
   margin: 1% auto;
   padding: 1%;
-  transition: background 0.2s, border 0.2s, color 0.2s;
+  transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .instrukcie a:hover {
@@ -248,7 +272,7 @@ h1 {
   margin: 0 auto;
   width: 100%;
   padding: 2% 1%;
-  transition: background 0.2s, border 0.2s, color 0.2s;
+  transition: background 0.3s, border 0.3s, color 0.3s;
   border: 1px solid #03a668;
 }
 
@@ -264,7 +288,7 @@ h1 {
   padding: 0;
   background: transparent;
   border: none;
-  transition: background 0.2s, border 0.2s, color 0.2s;
+  transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .list-group a {
@@ -276,6 +300,27 @@ h1 {
 
 .mails {
   margin: 0 3%;
+}
+
+.panel-heading.panel-heading.active {
+  background: #03a668;
+}
+
+.panel-heading.panel-heading.active .panel-title {
+  color: white;
+}
+
+.panel-heading.panel-heading.active:hover {
+  background: white;
+}
+
+.panel-heading.panel-heading.active .panel-title:hover {
+  color: #03a668;
+  background-color: white;
+}
+
+.form-control {
+  margin: 1% 0;
 }
 
 @media (max-width: 1225px)  {
