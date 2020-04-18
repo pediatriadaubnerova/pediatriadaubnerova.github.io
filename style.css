@@ -42,19 +42,21 @@ html {
   border-radius: 15px;
 }
 
-.jumbotron h2, p {
+.jumbotron h2, .jumbotron p {
   font-size: 400%;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
   background-color: transparent;
   color: #03a668;
   font-size: 200%;
+
+  transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .navbar-default .navbar-brand:hover {
-  background-color: transparent;
-  color: #03a668;
+  background-color: #03a668;
+  color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -327,6 +329,53 @@ h1 {
 
 .form-control {
   margin: 1% 0;
+}
+
+#kalendar {
+  position: relative;
+  /* height: 100%; */
+}
+
+#myScrollspy {
+  margin: 4% 0;
+}
+
+.ages {
+  margin: 4% 0;
+  overflow: auto;
+  height: 500px;
+  border-left: 5px solid #03a668;
+}
+
+.ages h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #03a668;
+  font-weight: bold;
+}
+
+.ages p {
+  font-size: 150%;
+}
+
+.ages div {
+    min-height: 200px;
+    border-bottom: 3px solid #03a668;
+    margin-bottom: 3%;
+    padding-left: 1%;
+  }
+
+#dospeli {
+  border: none;
+}
+
+.nav-pills a {
+  color: #03a668;
+}
+
+.nav-pills li a:hover, .nav-pills li.active a {
+  background: #03a668;
+  color: white;
 }
 
 @media (max-width: 1225px)  {
