@@ -21,6 +21,8 @@
 body {
   position: relative;
   height: 100%;
+  background: #f0f5f2;
+  font-family: 'Work Sans', sans-serif;
 }
 
 html {
@@ -42,21 +44,25 @@ html {
   border-radius: 15px;
 }
 
-.jumbotron h2, .jumbotron p {
+.jumbotron h2 {
   font-size: 400%;
+}
+
+.jumbotron p {
+  font-size: 200%;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
   background-color: transparent;
-  color: #03a668;
+  color: white;
   font-size: 200%;
 
   transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .navbar-default .navbar-brand:hover {
-  background-color: #03a668;
-  color: white;
+  background-color: white;
+  color: #03a668;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -64,10 +70,10 @@ html {
 }
 
 .navbar-default {
-  background-color: white;
+  background-color: #03a668;
   border-width: 0;
   border: 0;
-  border-bottom: 3px solid #03a668 !important;
+  /* border-bottom: 3px solid #03a668 !important; */
 }
 
 .navbar-fixed-top {
@@ -85,20 +91,20 @@ html {
 
 .navbar-default .navbar-nav>li>a {
   background-color: transparent;
-  color: #03a668;
+  color: white;
   font-size: 120%;
 
   transition: background 0.3s, border 0.3s, color 0.3s;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active  {
-  background-color: #03a668;
-  color: white;
+  background-color: white;
+  color: #03a668;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #03a668;
-  color: white;
+  background-color: white;
+  color: #03a668;
 }
 
 .navbar .container-fluid {
@@ -340,6 +346,12 @@ h1 {
   margin: 4% 0;
 }
 
+.ages ul {
+  margin-left: 3%;
+  margin-bottom: 3%;
+  font-size: 150%;
+}
+
 .ages {
   margin: 4% 0;
   overflow: auto;
@@ -356,21 +368,24 @@ h1 {
 
 .ages p {
   font-size: 150%;
+  margin-bottom: 1%;
 }
 
 .ages div {
-    min-height: 200px;
+    min-height: 220px;
     border-bottom: 3px solid #03a668;
     margin-bottom: 3%;
     padding-left: 1%;
   }
 
-#dospeli {
+#dobrovolne {
   border: none;
 }
 
 .nav-pills a {
   color: #03a668;
+  font-weight: bold;
+  font-size: 120%;
 }
 
 .nav-pills li a:hover, .nav-pills li.active a {
