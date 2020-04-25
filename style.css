@@ -334,7 +334,8 @@ h1 {
 }
 
 .form-control {
-  margin: 1% 0;
+  width: 98%;
+  margin: 1%;
 }
 
 #kalendar {
