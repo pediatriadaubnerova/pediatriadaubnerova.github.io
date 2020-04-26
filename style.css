@@ -502,6 +502,9 @@ h1 {
   .rady h2 {
     font-size: 230%;
   }
+  h1 {
+    font-size: 250%;
+  }
 }
 
 @media (max-width: 1225px)  {
