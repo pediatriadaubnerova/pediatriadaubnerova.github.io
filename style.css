@@ -505,6 +505,10 @@ h1 {
   h1 {
     font-size: 250%;
   }
+
+  .fotky h2 {
+    font-size: 140%;
+  }
 }
 
 @media (max-width: 1225px)  {
