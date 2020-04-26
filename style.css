@@ -463,6 +463,10 @@ h1 {
   text-align: center;
 }
 
+.rady li {
+  margin-bottom: 1%;
+}
+
 .rady .container {
   height: 80%;
   background: #f0f5f2;
