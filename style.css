@@ -497,10 +497,10 @@ h1 {
 
 @media only screen and (max-width: 550px) {
   .rady a {
-    font-size: 100%;
+    font-size: 90%;
   }
   .rady h2 {
-    font-size: 230%;
+    font-size: 210%;
   }
   h1 {
     font-size: 250%;
