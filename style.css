@@ -144,6 +144,16 @@ html {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .jumbotron h2 {
+    font-size: 200%;
+  }
+
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
+    font-size: 180%;
+  }
+}
+
 .fotky h2{
   text-align: center;
   color: #03a668;;
