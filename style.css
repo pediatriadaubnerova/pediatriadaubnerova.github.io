@@ -478,11 +478,30 @@ h1 {
 }
 
 .rady .container {
+  width: 100%;
   height: 80%;
   background: #f0f5f2;
   color:  #03a668;
   border-radius: 15px;
-  padding: 5% 0;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .rady a {
+    font-size: 140%;
+  }
+  .rady h2 {
+    font-size: 350%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .rady a {
+    font-size: 100%;
+  }
+  .rady h2 {
+    font-size: 230%;
+  }
 }
 
 @media (max-width: 1225px)  {
