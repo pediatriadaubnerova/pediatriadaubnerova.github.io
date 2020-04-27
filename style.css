@@ -1,3 +1,7 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------- GENERAL ----------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,17 +9,6 @@
 
 .row {
   margin: 0;
-}
-
-.header {
-  background-image: url(./jumbo.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-
-  text-align: center;
-  color: white;
 }
 
 body {
@@ -27,6 +20,37 @@ body {
 
 html {
   height: 100%;
+}
+
+h1 {
+  text-align: center;
+  background-color: #03a668;
+  color: white;
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 300%;
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 250%;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------- HEADER -------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+.header {
+  background-image: url(./jumbo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+
+  text-align: center;
+  color: white;
 }
 
 .header .jumbotron {
@@ -51,6 +75,19 @@ html {
 .jumbotron p {
   font-size: 200%;
 }
+
+@media only screen and (max-width: 768px) {
+  .jumbotron h2 {
+    font-size: 200%;
+  }
+  .header {
+    background-image: url(./mobile-jumbo.jpg);
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------- NAVIGATION ----------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
   background-color: transparent;
@@ -123,6 +160,43 @@ html {
   padding-right: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
+    font-size: 180%;
+  }
+}
+
+@media (max-width: 1144px) {
+    .navbar-header:not(.in) {
+        float: none;
+    }
+    .navbar-toggle:not(.in) {
+        display: block;
+    }
+    .navbar-collapse:not(.in) {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse:not(.in) {
+        display: none!important;
+    }
+    .navbar-nav:not(.in) {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li:not(.in) {
+        float: none;
+    }
+    .navbar-nav>li>a:not(.in) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ KTO SME ----------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
 .fotky img {
   display: block;
   margin-left: auto;
@@ -138,35 +212,9 @@ html {
   padding-left: 10%;
 }
 
-@media only screen and (min-width: 768px) {
-  .fotky .left {
-    border-right: 3px solid #03a668;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .jumbotron h2 {
-    font-size: 200%;
-  }
-
-  .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
-    font-size: 180%;
-  }
-}
-
 .fotky h2{
   text-align: center;
   color: #03a668;;
-}
-
-h1 {
-  text-align: center;
-  background-color: #03a668;
-  color: white;
-  margin: 0;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: 300%;
 }
 
 .fotky h2 {
@@ -179,40 +227,21 @@ h1 {
   margin-bottom: 10%;
 }
 
-.instrukcie .col-sm-8 {
-  padding: 2%;
+@media only screen and (min-width: 768px) {
+  .fotky .left {
+    border-right: 3px solid #03a668;
+  }
 }
 
-.instrukcie p {
-  font-size: 160%;
-  text-align: center;
-  color: #03a668;
-  margin-bottom: 0;
+@media only screen and (max-width: 550px) {
+  .fotky h2 {
+    font-size: 125%;
+  }
 }
 
-.instrukcie a, .instrukcie a:hover, .instrukcie a:active {
-  text-decoration: none;
-  display: block;
-  border-radius: 15px;
-  width: 220px;
-  background-color: white;
-  border: 1px solid #03a668;
-  color: #03a668;
-  font-size: 100%;
-  margin: 1% auto;
-  padding: 1%;
-  transition: background 0.3s, border 0.3s, color 0.3s;
-}
-
-.instrukcie a:hover {
-  background-color: #03a668;
-  color: white;
-}
-
-#mail {
-  width: 350px;
-  margin-bottom: 0;
-}
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ MAPA -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .mapa {
   background-image: url(./nemocnica.jpg);
@@ -252,20 +281,10 @@ h1 {
   margin: 1% auto 3% auto;
 }
 
-/* .mapa .bottom {
-  margin: 0 auto 3% auto;
-} */
-
 .mapa h2 {
   text-align: center;
   color: #03a668;
   padding: 1% 0 1% 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .mapa .right {
-    border-left: 3px solid #03a668;
-  }
 }
 
 .mapouter {
@@ -281,84 +300,65 @@ h1 {
   width:100%;
 }
 
-/* @media (max-width: 1200px) {
-  .instrukcie a {
-    display: block;
+@media only screen and (min-width: 768px) {
+  .mapa .right {
+    border-left: 3px solid #03a668;
   }
-} */
-
-.panel-group {
-  margin: 3%;
 }
 
-.panel, .panel-default, .panel-heading {
-  -webkit-appearance: none;
-  border: none;
-  box-shadow: none;
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ INSTRUKCIE -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.instrukcie .col-sm-8 {
+  padding: 2%;
 }
 
-.panel-heading a, .panel-heading a:hover {
-  text-decoration: none;
+.instrukcie p {
+  font-size: 160%;
   text-align: center;
   color: #03a668;
-  background-color: transparent;
-  font-size: 150%;
-  font-weight: bold;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  padding: 2% 1%;
-  transition: background 0.3s, border 0.3s, color 0.3s;
-  border: 1px solid #03a668;
+  margin-bottom: 0;
 }
 
-.panel-heading a:hover, .panel-heading a.active {
+.instrukcie a, .instrukcie a:hover, .instrukcie a:active {
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+  width: 220px;
+  background-color: white;
+  border: 1px solid #03a668;
+  color: #03a668;
+  font-size: 100%;
+  margin: 1% auto;
+  padding: 1%;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.instrukcie a:hover {
   background-color: #03a668;
   color: white;
 }
 
-.panel-group .panel-heading {
-  color: #03a668;
-  background-color: white;
-  border: 1px solid #03a668;
-  padding: 0;
-  background: transparent;
-  border: none;
-  transition: background 0.3s, border 0.3s, color 0.3s;
+#mail {
+  width: 350px;
+  margin-bottom: 0;
 }
 
-.list-group a {
-  float: right;
-  color: #03a668;
-  text-decoration: none;
-  font-weight: bold;
+@media (max-width: 768px) {
+  .instrukcie a {
+    display: block;
+    font-size: 90%;
+  }
+  .instrukcie p {
+    font-size: 130%;
+  }
 }
 
-.mails {
-  margin: 0 3%;
-}
-
-.panel-heading.panel-heading.active {
-  background: #03a668;
-}
-
-.panel-heading.panel-heading.active .panel-title {
-  color: white;
-}
-
-.panel-heading.panel-heading.active:hover {
-  background: white;
-}
-
-.panel-heading.panel-heading.active .panel-title:hover {
-  color: #03a668;
-  background-color: white;
-}
-
-.form-control {
-  width: 98%;
-  margin: 1%;
-}
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ OCKOVACI KALENDAR ------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #kalendar {
   position: relative;
@@ -428,6 +428,16 @@ h1 {
   background: #03a668;
   color: white;
 }
+
+@media (max-width: 1200px) {
+  #dobrovolne a {
+    display: inline;
+  }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ RADY -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .rady {
   background-image: url(./books.jpg);
@@ -502,13 +512,84 @@ h1 {
   .rady h2 {
     font-size: 210%;
   }
-  h1 {
-    font-size: 250%;
-  }
+}
 
-  .fotky h2 {
-    font-size: 140%;
-  }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ UZITOCNE KONTAKTY ------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.panel-group {
+  margin: 3%;
+}
+
+.panel, .panel-default, .panel-heading {
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+}
+
+.panel-heading a, .panel-heading a:hover {
+  text-decoration: none;
+  text-align: center;
+  color: #03a668;
+  background-color: transparent;
+  font-size: 150%;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2% 1%;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+  border: 1px solid #03a668;
+}
+
+.panel-heading a:hover, .panel-heading a.active {
+  background-color: #03a668;
+  color: white;
+}
+
+.panel-group .panel-heading {
+  color: #03a668;
+  background-color: white;
+  border: 1px solid #03a668;
+  padding: 0;
+  background: transparent;
+  border: none;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.list-group a {
+  float: right;
+  color: #03a668;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mails {
+  margin: 0 3%;
+}
+
+.panel-heading.panel-heading.active {
+  background: #03a668;
+}
+
+.panel-heading.panel-heading.active .panel-title {
+  color: white;
+}
+
+.panel-heading.panel-heading.active:hover {
+  background: white;
+}
+
+.panel-heading.panel-heading.active .panel-title:hover {
+  color: #03a668;
+  background-color: white;
+}
+
+.form-control {
+  width: 98%;
+  margin: 1%;
 }
 
 @media (max-width: 1225px)  {
@@ -519,31 +600,4 @@ h1 {
   .list-group {
     text-align: center;
   }
-}
-
-@media (max-width: 1144px) {
-    .navbar-header:not(.in) {
-        float: none;
-    }
-    .navbar-toggle:not(.in) {
-        display: block;
-    }
-    .navbar-collapse:not(.in) {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse:not(.in) {
-        display: none!important;
-    }
-    .navbar-nav:not(.in) {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li:not(.in) {
-        float: none;
-    }
-    .navbar-nav>li>a:not(.in) {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 }
