@@ -319,6 +319,17 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .mapa p {
+    font-size: 200%;
+  }
+}
+@media (max-width: 550px) {
+  .mapa p {
+    font-size: 130%;
+  }
+}
+
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------ INSTRUKCIE -------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -377,9 +388,8 @@ h1 {
   position: relative;
 }
 
-.kalendar h1 {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+.kalendar .col-sm-8 {
+  padding: 0;
 }
 
 .kalendar .container {
@@ -406,7 +416,6 @@ h1 {
   margin: 4% 0;
   overflow: auto;
   height: 80%;
-  border-left: 5px solid #03a668;
 }
 
 .ages h2 {
@@ -427,6 +436,10 @@ h1 {
     margin-bottom: 3%;
     padding-left: 1%;
   }
+
+.ages .inside-ages {
+  border: none;
+}
 
 #dobrovolne {
   border: none;
@@ -472,6 +485,13 @@ h1 {
   }
   .kalendar .container {
     height: 85%;
+  }
+  .ages {
+    border-left: 5px solid #03a668;
+  }
+  .kalendar h1 {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
   }
 }
 
