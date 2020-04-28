@@ -413,7 +413,7 @@ h1 {
 }
 
 .ages {
-  margin: 4% 0;
+  margin: 4% 0 0 0;
   overflow: auto;
   height: 80%;
 }
@@ -439,6 +439,7 @@ h1 {
 
 .ages .inside-ages {
   border: none;
+  padding-left: 5%;
 }
 
 #dobrovolne {
@@ -518,13 +519,13 @@ h1 {
   background-image: url(./books.jpg);
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
 }
 
 .rady .jumbotron {
   width: 100%;
-  height: 60%;
+  height: 65%;
 
   display: flex;
   flex-flow: column;
@@ -534,7 +535,7 @@ h1 {
 
   margin: 0;
   padding: 0;
-  margin: 10% auto 10% auto;
+  margin: 10% auto 0 auto;
   padding: 3% 10% 5% 10%;
   border-radius: 15px;
 }
@@ -544,7 +545,7 @@ h1 {
   font-weight: bold;
   font-size: 400%;
   color: white;
-  /* margin-bottom: 5%;s */
+  margin-bottom: 5%;
 }
 
 .rady a {
