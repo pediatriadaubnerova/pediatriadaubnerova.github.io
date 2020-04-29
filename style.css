@@ -301,7 +301,7 @@ h1 {
     font-size: 120%;
   }
   .fotky p {
-    font-size: 125%;
+    font-size: 110%;
   }
 }
 
@@ -556,7 +556,7 @@ h1 {
     background-image: url("./ockovanie-nove.JPG");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     padding: 5%;
   }
