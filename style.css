@@ -220,17 +220,22 @@ h1 {
 
 .fotky h2{
   text-align: center;
-  color: #03a668;;
-}
-
-.fotky h2 {
+  color: #03a668;
   font-size: 200%;
   padding-bottom: 3%;
   border-bottom: 3px solid #03a668;
   margin-left: 8%;
   margin-right: 8%;
   margin-top: 0;
+  margin-bottom: 3%;
+}
+
+.fotky p {
+  text-align: center;
+  color: #03a668;
+  font-weight: bold;
   margin-bottom: 10%;
+  font-size: 140%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,8 +251,56 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .fotky h2 {
+    font-size: 160%;
+  }
+  .fotky p {
+    font-size: 125%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .fotky h2 {
+    font-size: 140%;
+  }
+  .fotky p {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .fotky h2 {
+    font-size: 120%;
+  }
+  .fotky p {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .fotky h2 {
+    font-size: 100%;
+  }
+  .fotky p {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 550px) {
+  .fotky h2 {
+    font-size: 180%;
+  }
+  .fotky p {
+    font-size: 120%;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .fotky h2 {
+    font-size: 140%;
+  }
+  .fotky p {
     font-size: 125%;
   }
 }
