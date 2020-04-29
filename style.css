@@ -168,7 +168,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
-    font-size: 180%;
+    font-size: 170%;
   }
 }
 
@@ -298,7 +298,7 @@ h1 {
 
 @media only screen and (max-width: 550px) {
   .fotky h2 {
-    font-size: 140%;
+    font-size: 130%;
   }
   .fotky p {
     font-size: 125%;
