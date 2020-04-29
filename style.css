@@ -168,7 +168,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .navbar-default .navbar-brand, .navbar-default .navbar-brand:visited {
-    font-size: 160%;
+    font-size: 140%;
   }
 }
 
