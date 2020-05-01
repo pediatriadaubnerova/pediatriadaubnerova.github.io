@@ -37,8 +37,10 @@
       </div>
     </nav>
 
-    <!-- navbar-toggleable-sm navbar-right -->
+    <!-- Oznamy -->
+    
 
+    <!-- Header -->
     <div id="home" class="row">
       <div class="header">
         <div class="col-sm-6">
@@ -279,11 +281,11 @@
         <div class="panel-group">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <a data-toggle="collapse" class="panel-title" href="#collapse1">Kontakty na odborné ambulancie</a>
+              <a data-toggle="collapse" class="panel-title" href="#collapse">Kontakty na odborné ambulancie</a>
             </div>
-            <div id="collapse1" class="panel-collapse collapse">
+            <div id="collapse" class="panel-collapse collapse">
               <input class="form-control" id="myInput" type="text" placeholder="Search..">
-              <ul class="list-group" id="myList">
+              <ul class="list-group" id="kontakty">
                 <li class="list-group-item">Pohotovosť pre deti a dorast Žilina, V.Spanyola 43 <a href="tel:+421415110522">041/ 5110522</a> </li>
                 <li class="list-group-item">FNsP Žilina, V. Spanyola 43, Žilina- ústredňa <a href="tel:+421415110111">041/ 5110111</a></li>
                 <li class="list-group-item">Detské oddelenie - príjmová amb. FNsP -Žilina <a href="tel:+421415110509">041/ 5110509</a></li>
@@ -342,7 +344,7 @@
       $(document).ready(function(){
         $("#myInput").on("keyup", function() {
           var value = $(this).val().toLowerCase();
-          $("#myList li").filter(function() {
+          $("#kontakty li").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
           });
         });
