@@ -616,7 +616,7 @@ h1 {
 
   margin: 0;
   padding: 0;
-  margin: 10% auto 0 auto;
+  margin: 10% auto 10% auto;
   padding: 5% 10% 5% 10%;
   border-radius: 15px;
 }
@@ -624,18 +624,19 @@ h1 {
 .rady h2 {
   text-align: center;
   font-weight: bold;
-  font-size: 400%;
+  font-size: 350%;
   color: white;
   margin: 0 0 5% 0;
 }
 
-.list-group {
+#myList {
   width: 100%;
-  height: 80%;
+  height: 100%;
   background: #f0f5f2;
   color:  #03a668;
   border-radius: 15px;
   overflow: auto;
+  margin: 0;
 }
 
 .list-group-item {
@@ -644,30 +645,110 @@ h1 {
   width: 100%;
 }
 
-.rady a {
-  color:  #03a668;
-  font-weight: bold;
-  font-size: 150%;
+.rady .panel-heading a {
+  border: none;
+  border-bottom: 1px solid #03a668;
+  padding: 3%;
 }
 
-.rady a:hover {
+.rady .panel-heading a:hover {
   background:  #03a668;
   color: white;
-  border-color:  #03a668;
+  border: none;
+  border-bottom: 1px solid #03a668;
+  padding: 3%;
 }
 
-/* .rady ul {
-  width: 100%;
-  height: 80%;
-  background: #f0f5f2;
+.rady .panel-heading a.active {
+    background-color: #03a668;
+    color: white;
+}
+
+.rady .panel-heading a {
   color:  #03a668;
-  border-radius: 15px;
-  padding: 5%;
-} */
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.rady .panel-heading a:hover {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.rady h4 {
+  font-size: 120%;
+}
+
+#myList .panel-heading {
+  border-radius: 0;
+}
+
+#myList .panel-heading.panel-heading.active a {
+  background: white;
+  color: #03a668;
+}
+
+#myList .panel-heading.panel-heading.active a:hover {
+  background: #03a668;
+  color: white;
+}
+
+#myList .panel-heading.panel-heading.lekarnicka.active a {
+  background: #03a668;
+  color: white;
+}
+
+#collapse1 .panel-heading {
+  font-size: 130%;
+  font-weight: bold;
+  padding: 2% 5%;
+}
+
+#collapse1 .panel-body {
+  border-bottom: 1px solid #ddd;
+  font-size: 110%;
+  padding: 2% 5%;
+  color: black;
+}
+
+#collapse1 .panel-footer {
+  font-weight: 500;
+  font-size: 110%;
+  background: #03a668;
+  color: white;
+  padding: 3% 5%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .rady a {
+    font-size: 140%;
+  }
+  .rady h4 {
+    font-size: 100%;
+  }
+  .rady h2 {
+    font-size: 250%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .rady a {
+    font-size: 140%;
+  }
+  .rady h4 {
+    font-size: 100%;
+  }
+  .rady h2 {
+    font-size: 200%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .rady a {
     font-size: 140%;
+  }
+  .rady h4 {
+    font-size: 120%;
   }
   .rady h2 {
     font-size: 350%;
@@ -678,11 +759,14 @@ h1 {
   .rady a {
     font-size: 100%;
   }
-  .rady h2 {
-    font-size: 210%;
+  .rady h4 {
+    font-size: 100%;
   }
   .rady {
     height: auto;
+  }
+  .rady h2 {
+    font-size: 200%;
   }
 }
 
