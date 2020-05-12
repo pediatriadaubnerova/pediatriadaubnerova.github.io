@@ -13,7 +13,10 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="600">
-    <!-- Navigation bar -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Navigation bar -------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -28,6 +31,7 @@
           <ul class="nav navbar-nav">
             <li><a href="#home">Domov</a></li>
             <li><a href="#ktosme">Kto sme</a></li>
+            <li><a href="#hodiny-row">Otváracie hodiny</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
             <li><a href="#kalendar">Očkovanie</a></li>
             <li><a href="#rady">Rady</a></li>
@@ -37,7 +41,10 @@
       </div>
     </nav>
 
-    <!-- Oznamy -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Oznamy ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div class="row oznamy">
       <!-- <div class="alert alert-danger">
         <strong>Pozor!</strong> Kvôli pandémii Covid-19 nás prosím pred návštevou kontaktujte.
@@ -47,7 +54,9 @@
       </div> -->
     </div>
 
-    <!-- Header -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Header ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id="home" class="row">
       <div class="header">
         <div class="col-sm-6">
@@ -62,7 +71,9 @@
       </div>
     </div>
 
-    <!-- Kto sme row -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Kto sme --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id="ktosme" class="row fotky">
       <h1><strong>Kto sme</strong></h1>
       <div class="col-sm-6 left">
@@ -77,7 +88,61 @@
       </div>
     </div>
 
-    <!-- Kontakt a mapa -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Hodiny --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="row instrukcie" id="hodiny-row">
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8" id="hodiny-column">
+        <div class="hodiny-container">
+          <!-- <p><strong><a data-toggle="collapse" id="hodiny-toggle" href="#hodiny">Otváracie hodiny</a></strong></p> -->
+          <table class="table " id="hodiny">
+            <thead>
+              <tr>
+                <th colspan="2" id="hodiny-toggle"><strong>Ordinačné hodiny</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pondelok</td>
+                <td>6:45 - 15:00</td>
+              </tr>
+              <tr>
+                <td>Utorok</td>
+                <td>6:45 - 15:00</td>
+              </tr>
+              <tr>
+                <td>Streda</td>
+                <td>6:45 - 14:00</td>
+              </tr>
+              <tr>
+                <td>Štvrtok</td>
+                <td>6:45 - 13:00</td>
+              </tr>
+              <tr>
+                <td>Piatok</td>
+                <td>6:45 - 12:00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="2">(Po 12:00 iba preventívne prehľiadky pre objednaných pacientov)</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="col-sm-2"></div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Kontakt a mapa -------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
     <div id="kontakt" class="row mapa">
       <!-- <h1><strong>Kontakt</strong></h1> -->
       <div class="col-sm-2"></div>
@@ -87,7 +152,8 @@
           <p class="bottom"><strong>Nájdete nás v Detskej poliklinike,</br>na 1. poschodí, dvere 7</strong></p>
           <div class="mapouter embed-responsive">
             <div class="gmap_canvas">
-              <iframe class="gmap" src="https://maps.google.com/maps?q=49.217728%2C%2018.745726&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <iframe class="gmap" src="https://maps.google.com/maps?q=49.217728%2C%2018.745726&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
               <a href="https://www.crocothemes.net"></a>
             </div>
           </div>
@@ -101,14 +167,20 @@
       <div class="col-sm-2"></div>
 
       <div class="col-sm-8">
-        <p><strong>Dovoláte sa nám na: <a href="tel:+421415110243">+421 415 110 243</a></strong></p>
-        <p><strong>A pre preskripciu opakovaných e-receptov po dohovore s lekárom nám napíšte na:<a href="mailto:mudrdaubnerova@gmail.com" id="mail"><strong>mudrdaubnerova@gmail.com</strong></a></strong></p>
+        <p><strong>Dovoláte sa nám na:
+          <a href="tel:+421415110243">+421 415 110 243</a></strong>
+        </p>
+        <p><strong>A pre preskripciu opakovaných e-receptov po dohovore s lekárom nám napíšte na:
+          <a href="mailto:mudrdaubnerova@gmail.com" id="mail"><strong>mudrdaubnerova@gmail.com</strong></a></strong>
+        </p>
       </div>
 
       <div class="col-sm-2"></div>
     </div>
 
-    <!-- Kalendar ockovani -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Kalendar ockovani ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id="kalendar" class="row kalendar">
       <div class="col-sm-2"></div>
 
@@ -193,7 +265,9 @@
               </div>
               <div id="dobrovolne">
                 <h2>Dobrovoľné očkovania</h2>
-                <p>Zoznam nepovinných ale odporúčaných očkovaní nájdete na: &emsp; <a target="_blank" href="http://www.sprievodcaockovanim.sk/odporucane-ockovania/"> www.sprievodcaockovanim.sk</a></p>
+                <p>Zoznam nepovinných ale odporúčaných očkovaní nájdete na: &emsp;
+                  <a target="_blank" href="http://www.sprievodcaockovanim.sk/odporucane-ockovania/"> www.sprievodcaockovanim.sk</a>
+                </p>
                 <p>Pre bližšie informácie kontaktujte našu ambulanciu.</p>
               </div>
             </div>
@@ -206,7 +280,9 @@
       <div class="col-sm-2"></div>
     </div>
 
-    <!-- Rady -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Rady ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id="rady" class="row rady">
 
       <div class="col-sm-3"></div>
@@ -233,7 +309,12 @@
               </div>
               <div class="panel-heading">
                 <h4 class="panel-title">
-                  <a target="_blank" href="https://www.zdraviedietata.sk/vyvinove-dotazniky/">Dotazník psychomotorického vývoja dieťaťa</a>
+                  <a target="_blank" href="https://www.zdraviedietata.sk/vyvinove-dotazniky/">Dotazník psychomotorického vývinu dieťaťa</a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a target="_blank" href="https://mamaaja.sk/chore-dieta/prva-pomoc/hnacka-prva-pomoc">Hnačka u detí - diéta a tekutiny</a>
                 </h4>
               </div>
               <div class="panel-heading lekarnicka">
@@ -279,13 +360,15 @@
 
     </div>
 
-    <!-- Uzitocne kontakty -->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Uzitocne kontakty ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id="uzitocne-kontakty" class="row ine-kontakty">
       <h1><strong>Užitočné kontakty</strong></h1>
       <div class="col-sm-2"></div>
 
       <div class="col-sm-8">
-        <div class="panel-group">
+        <div class="panel-group" id="title">
           <div class="panel panel-default">
             <div class="panel-heading">
               <a data-toggle="collapse" class="panel-title" href="#collapse">Kontakty na odborné ambulancie</a>
@@ -293,41 +376,116 @@
             <div id="collapse" class="panel-collapse collapse">
               <input class="form-control" id="myInput" type="text" placeholder="Search..">
               <ul class="list-group" id="kontakty">
-                <li class="list-group-item">Pohotovosť pre deti a dorast Žilina, V.Spanyola 43 <a href="tel:+421415110522">041/ 5110522</a> </li>
-                <li class="list-group-item">FNsP Žilina, V. Spanyola 43, Žilina- ústredňa <a href="tel:+421415110111">041/ 5110111</a></li>
-                <li class="list-group-item">Detské oddelenie - príjmová amb. FNsP -Žilina <a href="tel:+421415110509">041/ 5110509</a></li>
-                <li class="list-group-item">Laktačná poradkyňa- MVDr. Mekyňová, Žilina <a href="+421905975080">0905 975 080</a></li>
-                <li class="list-group-item">Detská ORL-krčná amb.- MUDr. Dunajovec, V.Spanyola 43 <a href="+421415110250">041/ 5110250</a></li>
-                <li class="list-group-item">Detský gastroenterológ- MUDr. Bačinská, V.Spanyola 43, 01207 Žilina <a href="+421415110273">041/ 5110273</a></li>
-                <li class="list-group-item">Detský neurológ - MUDr. Orvanová, Hálkova 3, 01001 Žilina<a href="tel:+421417634411">041/ 7634411</a></li>
-                <li class="list-group-item">Detský kardiológ- MUDr. Alexandra Sagálová, Hálková 3, 01001, Žilina<a href="tel:+421415630122">041/ 5630122</a></li>
-                <li class="list-group-item">Detský kardiológ - MUDr. Koma, V.Spanyola 43, 01207 Žilina<a href="tel:+421413811680">041/ 3811680</a></li>
-                <li class="list-group-item">Detský reumatológ - MUDr. Salátová, V.Spanyola 43, 01207 Žilina<a href="tel:+421415110225">041/ 5110225</a></li>
-                <li class="list-group-item">Detský alergológ - MUDr. Hrbáňová, V.Spanyola 43, 01207 Žilina<a href="tel:+421413219951">041/ 3219951</a></li>
-                <li class="list-group-item">Detský pneumológ- MUDr. Klement Matuška, V.Spanyola 43, Žilina<a href="tel:+421415110721">041/ 5110721</a></li>
-                <li class="list-group-item">Očný lekár pre deti - MUDr. Strnadová, Hálkova 3, 01001 Žilina<a href="tel:+421415008191">041/ 5008191</a></li>
-                <li class="list-group-item">Detský endokrinológ - MUDr. Kyšková, Hálkova 3, 01001 Žilina<a href="tel:+421415626411">041/ 5626411</a></li>
-                <li class="list-group-item">Detský gynekológ- MUDr. Popluhárová, Sládkovičová 13, 01001 Žilina<a href="tel:+421415643724">041/ 5643724</a></li>
-                <li class="list-group-item">Logopedická amb.- Mgr. Remišová, Framborská 58, Žilina<a href="tel:+421417632749">041/ 7632749</a></li>
-                <li class="list-group-item">Logopedická amb. - PaeDr. Štefániková, Hálkova 3, Žilina<a href="tel:+421415630114">041/ 5630114</a></li>
-                <li class="list-group-item">Súkromná rehabilitácia- Mgr. Majsniarová, Kysucká cesta 3, 01001, Žilina<a href="tel:+421905951299">0905 951 299</a></li>
-                <li class="list-group-item">Rehabilitačné odd- Nemocnica V.Spanyola 43, 01207 Žilina<a href="tel:+421415110561">041/ 5110561</a></li>
-                <li class="list-group-item">Traumatologická ambul.-MUDr. Remšík, V.Spanyola 43, ŽA<a href="tel:+421417246942">041/ 7246942</a></li>
-                <li class="list-group-item">Chirurgická amb.- MUDr. Pevný, Nemocnica Žilina, V.Spanyola 43<a href="tel:+421415630158">041 / 5630158</a></li>
-                <li class="list-group-item">Chirurgia príjmová amb., Nemocnica Žilina, V.Spanyola 43<a href="tel:+421415110332">041/ 5110332</a></li>
-                <li class="list-group-item">Kožná amb. - MUDr. Frátriková, Hálkova 3, Žilina<a href="tel:+421417029161">041/ 7029161</a></li>
-                <li class="list-group-item">Detský alergológ- MUDr. Neuschlová V.Spanyola 43, ŽA<a href="tel:+421415110442">041/5110442</a></li>
-                <li class="list-group-item">Inštitút očkovania a cestovnej medicíny, Žilpo, MUDr. Bakoš<a href="tel:+421915889054">0915 889 054</a></li>
-                <li class="list-group-item">Prenatálna amb.- MUDr.Babjak, Hálkova, Žilina<a href="tel:+421904642088">0904 642 088</a></li>
-                <li class="list-group-item">Psychologická amb. - PhDr. Jančárová, Hálkova 3, Žilina<a href="tel:+421911701655">0911 701 655</a></li>
-                <li class="list-group-item">Psychiatrická amb.detská - MUDr. Šustrová, Vysokoškolákov 31, 01008 Žilina<a href="tel:+421415627042">041/ 5627042</a></li>
-                <li class="list-group-item">Psychologická amb.- deti- Mgr.Doničová, V.Spanyola 43, Žilina<a href="tel:+421415110438">041/ 5110438</a></li>
-                <li class="list-group-item">Deská ORL ambulancia, Štefánikova ul., Žilina, MUDr. Buňáková<a href="tel:+421415166122">041/5166122</a></li>
-                <li class="list-group-item">ORL-súkromná krčná amb.-MUDr. Mazúr <a href="tel:+421417235965">041/ 7235965</a> <a target="_blank" class="mails" href="http://www.krcne.szm.com">www.krcne.szm.com</a></li>
-                <li class="list-group-item">Detský nefrológ- MUDr. Kováčik, V.Spanyola 43, 01207 Žilina<a href"tel:+421415110814">041/ 5110814</a><a target="_blank" class="mails" href="https://www.fnspza.sk/sk/oddelenia/pediatria/detska-nefrologicka-ambulancia">www.fnspza.sk</a></li>
-                <li class="list-group-item">Detská ortopédická amb.- Nemocnica V.Spanyola 43, 01207 Žilina<a href="tel:+421415110853">041 / 5110853</a><a target="_blank" class="mails" href="https://www.objednatvysetrenie.sk">www.objednatvysetrenie.sk</a></li>
-                <li class="list-group-item">Detská kožná amb.- MUDr. Petráňová, ., Nemocnica Žilina, V.Spanyola 43<a href="tel:+421415110872">041/ 5110872</a><a target="_blank" class="mails" href="https://www.fnspza.sk/sk/oddelenia/dermatovenerologia/detska-kozna-ambulancia">www.fnspza.sk</a></li>
-                <li class="list-group-item">Poliklinika KRANKAS, Bratislavská 1, 010 01 Žilina<a href="tel:+421415071520">041/507 15 20</a><a target="_blank" class="mails" href="http://www.krankas.sk/">www.krankas.sk</a></li>
+                <li class="list-group-item">Pohotovosť pre deti a dorast Žilina, V.Spanyola 43
+                  <a href="tel:+421415110522">041/ 5110522</a>
+                </li>
+                <li class="list-group-item">FNsP Žilina, V. Spanyola 43, Žilina- ústredňa
+                  <a href="tel:+421415110111">041/ 5110111</a>
+                </li>
+                <li class="list-group-item">Detské oddelenie - príjmová amb. FNsP -Žilina
+                  <a href="tel:+421415110509">041/ 5110509</a>
+                </li>
+                <li class="list-group-item">Laktačná poradkyňa- MVDr. Mekyňová, Žilina
+                  <a href="+421905975080">0905 975 080</a>
+                </li>
+                <li class="list-group-item">Detská ORL-krčná amb.- MUDr. Dunajovec, V.Spanyola 43
+                  <a href="+421415110250">041/ 5110250</a>
+                </li>
+                <li class="list-group-item">Detský gastroenterológ- MUDr. Bačinská, V.Spanyola 43, 01207 Žilina
+                  <a href="+421415110273">041/ 5110273</a>
+                </li>
+                <li class="list-group-item">Detský neurológ - MUDr. Orvanová, Hálkova 3, 01001 Žilina
+                  <a href="tel:+421417634411">041/ 7634411</a>
+                </li>
+                <li class="list-group-item">Detský kardiológ- MUDr. Alexandra Sagálová, Hálková 3, 01001, Žilina
+                  <a href="tel:+421415630122">041/ 5630122</a>
+                </li>
+                <li class="list-group-item">Detský kardiológ - MUDr. Koma, V.Spanyola 43, 01207 Žilina
+                  <a href="tel:+421413811680">041/ 3811680</a>
+                </li>
+                <li class="list-group-item">Detský reumatológ - MUDr. Salátová, V.Spanyola 43, 01207 Žilina
+                  <a href="tel:+421415110225">041/ 5110225</a>
+                </li>
+                <li class="list-group-item">Detský alergológ - MUDr. Hrbáňová, V.Spanyola 43, 01207 Žilina
+                  <a href="tel:+421413219951">041/ 3219951</a>
+                </li>
+                <li class="list-group-item">Detský pneumológ- MUDr. Klement Matuška, V.Spanyola 43, Žilina
+                  <a href="tel:+421415110721">041/ 5110721</a>
+                </li>
+                <li class="list-group-item">Očný lekár pre deti - MUDr. Strnadová, Hálkova 3, 01001 Žilina
+                  <a href="tel:+421415008191">041/ 5008191</a>
+                </li>
+                <li class="list-group-item">Detský endokrinológ - MUDr. Kyšková, Hálkova 3, 01001 Žilina
+                  <a href="tel:+421415626411">041/ 5626411</a>
+                </li>
+                <li class="list-group-item">Detský gynekológ- MUDr. Popluhárová, Sládkovičová 13, 01001 Žilina
+                  <a href="tel:+421415643724">041/ 5643724</a>
+                </li>
+                <li class="list-group-item">Logopedická amb.- Mgr. Remišová, Framborská 58, Žilina
+                  <a href="tel:+421417632749">041/ 7632749</a>
+                </li>
+                <li class="list-group-item">Logopedická amb. - PaeDr. Štefániková, Hálkova 3, Žilina
+                  <a href="tel:+421415630114">041/ 5630114</a>
+                </li>
+                <li class="list-group-item">Súkromná rehabilitácia- Mgr. Majsniarová, Kysucká cesta 3, 01001, Žilina
+                  <a href="tel:+421905951299">0905 951 299</a>
+                </li>
+                <li class="list-group-item">Rehabilitačné odd- Nemocnica V.Spanyola 43, 01207 Žilina
+                  <a href="tel:+421415110561">041/ 5110561</a>
+                </li>
+                <li class="list-group-item">Traumatologická ambul.-MUDr. Remšík, V.Spanyola 43, ŽA
+                  <a href="tel:+421417246942">041/ 7246942</a>
+                </li>
+                <li class="list-group-item">Chirurgická amb.- MUDr. Pevný, Nemocnica Žilina, V.Spanyola 43
+                  <a href="tel:+421415630158">041 / 5630158</a>
+                </li>
+                <li class="list-group-item">Chirurgia príjmová amb., Nemocnica Žilina, V.Spanyola 43
+                  <a href="tel:+421415110332">041/ 5110332</a>
+                </li>
+                <li class="list-group-item">Kožná amb. - MUDr. Frátriková, Hálkova 3, Žilina
+                  <a href="tel:+421417029161">041/ 7029161</a>
+                </li>
+                <li class="list-group-item">Detský alergológ- MUDr. Neuschlová V.Spanyola 43, ŽA
+                  <a href="tel:+421415110442">041/5110442</a>
+                </li>
+                <li class="list-group-item">Inštitút očkovania a cestovnej medicíny, Žilpo, MUDr. Bakoš
+                  <a href="tel:+421915889054">0915 889 054</a>
+                </li>
+                <li class="list-group-item">Prenatálna amb.- MUDr.Babjak, Hálkova, Žilina
+                  <a href="tel:+421904642088">0904 642 088</a>
+                </li>
+                <li class="list-group-item">Psychologická amb. - PhDr. Jančárová, Hálkova 3, Žilina
+                  <a href="tel:+421911701655">0911 701 655</a>
+                </li>
+                <li class="list-group-item">Psychiatrická amb.detská - MUDr. Šustrová, Vysokoškolákov 31, 01008 Žilina
+                  <a href="tel:+421415627042">041/ 5627042</a>
+                </li>
+                <li class="list-group-item">Psychologická amb.- deti- Mgr.Doničová, V.Spanyola 43, Žilina
+                  <a href="tel:+421415110438">041/ 5110438</a>
+                </li>
+                <li class="list-group-item">Deská ORL ambulancia, Štefánikova ul., Žilina, MUDr. Buňáková
+                  <a href="tel:+421415166122">041/5166122</a>
+                </li>
+                <li class="list-group-item">ORL-súkromná krčná amb.-MUDr. Mazúr
+                  <a href="tel:+421417235965">041/ 7235965</a>
+                  <a target="_blank" class="mails" href="http://www.krcne.szm.com">www.krcne.szm.com</a>
+                </li>
+                <li class="list-group-item">Detský nefrológ- MUDr. Kováčik, V.Spanyola 43, 01207 Žilina
+                  <a href"tel:+421415110814">041/ 5110814</a>
+                  <a target="_blank" class="mails" href="https://www.fnspza.sk/sk/oddelenia/pediatria/detska-nefrologicka-ambulancia">www.fnspza.sk</a>
+                </li>
+                <li class="list-group-item">Detská ortopédická amb.- Nemocnica V.Spanyola 43, 01207 Žilina
+                  <a href="tel:+421415110853">041 / 5110853</a>
+                  <a target="_blank" class="mails" href="https://www.objednatvysetrenie.sk">www.objednatvysetrenie.sk</a>
+                </li>
+                <li class="list-group-item">Detská kožná amb.- MUDr. Petráňová, ., Nemocnica Žilina, V.Spanyola 43
+                  <a href="tel:+421415110872">041/ 5110872</a>
+                  <a target="_blank" class="mails" href="https://www.fnspza.sk/sk/oddelenia/dermatovenerologia/detska-kozna-ambulancia">www.fnspza.sk</a>
+                </li>
+                <li class="list-group-item">Poliklinika KRANKAS, Bratislavská 1, 010 01 Žilina
+                  <a href="tel:+421415071520">041/507 15 20</a>
+                  <a target="_blank" class="mails" href="http://www.krankas.sk/">www.krankas.sk</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -338,11 +496,17 @@
 
     </div>
 
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Scripts --------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Change header background when not collapsed -->
     <script>
       $('.panel-heading').on('click', function(e) {
+        $(this).toggleClass('active');
+      });
+      $('#hodiny-toggle').on('click', function(e) {
         $(this).toggleClass('active');
       });
     </script>

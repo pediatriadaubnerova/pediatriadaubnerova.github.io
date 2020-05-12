@@ -189,7 +189,7 @@ h1 {
   }
 }
 
-@media (max-width: 1144px) {
+@media (max-width: 1200px) {
     .navbar-header:not(.in) {
         float: none;
     }
@@ -323,6 +323,20 @@ h1 {
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ HODINY -------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#hodiny-row {
+  background-image: url(./ambulancia.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  /* background: #f0f5f2; */
+  /* border-top: 5px solid #03a668; */
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------ MAPA -------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -443,7 +457,7 @@ h1 {
   font-size: 100%;
   margin: 1% auto;
   padding: 1%;
-  transition: background 0.3s, border 0.3s, color 0.3s;
+  transition: background 0.3s, border 0.3s, color 0.3s, border-bottom-left-radius 0.3s, border-bottom-right-radius 0.3s;
 }
 
 .instrukcie a:hover {
@@ -456,14 +470,115 @@ h1 {
   margin-bottom: 0;
 }
 
+.instrukcie .hodiny-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.instrukcie .table {
+  margin: 15% auto 0 auto;
+  /* width: 528px; */
+  width: 80%;
+  text-align: center;
+  border-radius: 15px;
+  padding-bottom: 2%;
+}
+
+#hodiny {
+  background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85));
+}
+
+.instrukcie th {
+  text-align: center;
+}
+
+.instrukcie .table>tbody>tr>td {
+  padding: 2%;
+  font-size: 130%;
+}
+
+#hodiny-column {
+  padding: 1%;
+}
+
+#hodiny-row {
+  /* border-top: 3px solid #03a668; */
+}
+
+#hodiny-toggle {
+  /* width: 528px; */
+  border-radius: 15px;
+  /* text-align: center; */
+  font-size: 200%;
+}
+
+#hodiny-toggle {
+  background-color: #03a668;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#hodiny-toggle.active:hover {
+  background-color: white;
+  color: #03a668;
+}
+
+.instrukcie tfoot th {
+  background: #03a668;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 @media (max-width: 768px) {
-  .instrukcie a {
+  .instrukcie a, .hodiny a {
     display: block;
     font-size: 90%;
   }
-  .instrukcie p {
+  .instrukcie p, .hodiny p {
     font-size: 130%;
   }
+
+  .instrukcie th {
+    font-size: 100%;
+  }
+  /* .instrukcie table {
+    width: 528px;
+  }
+  #hodiny-toggle {
+    width: 528px;
+  } */
+}
+
+@media (max-width: 1060px) {
+  .instrukcie th {
+    font-size: 80%;
+  }
+  /* .instrukcie table {
+    width: 392px;
+  } */
+  /* #hodiny-toggle {
+    width: 392px;
+  } */
+}
+
+@media (max-width: 550px) {
+  .instrukcie th {
+    font-size: 80%;
+  }
+  .instrukcie .table>tbody>tr>td {
+    font-size: 100%;
+  }
+  #hodiny-toggle {
+    font-size: 160%;
+  }
+  /* .instrukcie table {
+    width: 247px;
+  } */
+  /* #hodiny-toggle {
+    width: 247px;
+  } */
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -525,6 +640,7 @@ h1 {
 .ages .inside-ages {
   border: none;
   padding-left: 5%;
+  padding-right: 5%;
   overflow: auto;
   height: 100%;
 }
@@ -800,6 +916,11 @@ h1 {
   -webkit-appearance: none;
   border: none;
   box-shadow: none;
+  border-radius: 15px;
+}
+
+.panel-group .panel {
+  border-radius: 15px;
 }
 
 .panel-heading a, .panel-heading a:hover {
@@ -817,6 +938,10 @@ h1 {
   border: 1px solid #03a668;
 }
 
+#title .panel-heading a, #title .panel-heading a:hover {
+  border-radius: 15px;
+}
+
 .panel-heading a:hover, .panel-heading a.active {
   background-color: #03a668;
   color: white;
@@ -830,6 +955,7 @@ h1 {
   background: transparent;
   border: none;
   transition: background 0.3s, border 0.3s, color 0.3s;
+  /* border-radius: 15px; */
 }
 
 .list-group a {
@@ -843,8 +969,10 @@ h1 {
   margin: 0 3%;
 }
 
-.panel-heading.panel-heading.active {
+#title .panel-heading.panel-heading.active {
   background: #03a668;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .panel-heading.panel-heading.active .panel-title {
@@ -855,9 +983,11 @@ h1 {
   background: white;
 }
 
-.panel-heading.panel-heading.active .panel-title:hover {
+#title .panel-heading.panel-heading.active .panel-title:hover {
   color: #03a668;
   background-color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .form-control {
@@ -865,7 +995,7 @@ h1 {
   margin: 1%;
 }
 
-@media (max-width: 1225px)  {
+@media (max-width: 1330px)  {
   .list-group a {
     display: block;
     float: none;
