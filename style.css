@@ -575,6 +575,9 @@ h1 {
   #hodiny-toggle {
     font-size: 160%;
   }
+  .instrukcie .table {
+    margin-top: 40%;
+  }
   /* .instrukcie table {
     width: 247px;
   } */
