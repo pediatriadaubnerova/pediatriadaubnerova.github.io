@@ -219,6 +219,58 @@ h1 {
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------ KTO SME ----------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/*
+.fotky-mono img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9%;
+  width: 80%;
+}
+
+.fotky-mono .col-sm-8 {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.fotky-mono h2{
+  text-align: center;
+  color: #03a668;
+  font-size: 200%;
+  padding-bottom: 3%;
+  border-bottom: 3px solid #03a668;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .fotky-mono h2 {
+    font-size: 160%;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .fotky-mono h2 {
+    font-size: 140%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 550px) {
+  .fotky-mono h2 {
+    font-size: 180%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .fotky-mono h2 {
+    font-size: 120%;
+  }
+} */
 
 .fotky img {
   display: block;
@@ -545,6 +597,17 @@ h1 {
   .instrukcie th {
     font-size: 100%;
   }
+
+  #kalendar .container {
+    margin-top: 0;
+  }
+
+  #kalendar .col-sm-2 {
+    padding: 0;
+    height: 0.0001;
+    background-color: #03a668;
+  }
+
   /* .instrukcie table {
     width: 528px;
   }
@@ -836,20 +899,20 @@ h1 {
   color: white;
 }
 
-#collapse1 .panel-heading {
+#collapse1 .panel-heading, #collapse2 .panel-heading {
   font-size: 130%;
   font-weight: bold;
   padding: 2% 5%;
 }
 
-#collapse1 .panel-body {
+#collapse1 .panel-body, #collapse2 .panel-body {
   border-bottom: 1px solid #ddd;
   font-size: 110%;
   padding: 2% 5%;
   color: black;
 }
 
-#collapse1 .panel-footer {
+#collapse1 .panel-footer, #collapse2 .panel-footer {
   font-weight: 500;
   font-size: 110%;
   background: #03a668;
