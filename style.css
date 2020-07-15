@@ -920,6 +920,16 @@ h1 {
   padding: 3% 5%;
 }
 
+#collapse3 a {
+  color: black;
+}
+
+#collapse3 a:hover {
+  color: #03a668;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1100px) {
   .rady a {
     font-size: 140%;
