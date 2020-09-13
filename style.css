@@ -858,6 +858,7 @@ h1 {
 }
 
 .rady .panel-heading a {
+  font-family: inherit;
   border: none;
   border-bottom: 1px solid #03a668;
   padding: 3%;
@@ -896,6 +897,7 @@ h1 {
 }
 
 #myList .panel-heading.panel-heading.active a {
+  font-family: inherit;
   background: white;
   color: #03a668;
 }
@@ -932,6 +934,8 @@ h1 {
 }
 
 #collapse3 a {
+  font-family: inherit;
+  font-size: 110%;
   color: black;
 }
 
