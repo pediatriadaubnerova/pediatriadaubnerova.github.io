@@ -1053,18 +1053,26 @@ h1 {
   font-size: 400%;
   font-weight: bold;
   text-align: center;
+  display: block;
+  box-sizing: border-box;
+  height: 10%;
 }
 
 #corona p {
   margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 130%;
   text-align: center;
   font-weight: normal;
+  display: block;
+  box-sizing: border-box;
+  height: 12%;
+  overflow: auto;
 }
 
 #corona .panel-group {
   overflow: auto;
-  height: 70%;
+  height: 73%;
 }
 
 #corona h4 {
