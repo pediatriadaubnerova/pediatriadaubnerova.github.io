@@ -41,6 +41,7 @@
         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="#top">Domov</a></li>
+            <li id="menu-corona"><a href="#corona">COVID-19</a></li>
             <li><a href="#ktosme">Kto sme</a></li>
             <li><a href="#hodiny-row">Ordinačné hodiny</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
@@ -57,7 +58,7 @@
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <div id='top' class="row oznamy">
       <div class="alert alert-danger">
-        <strong>Upozornenie!</strong> V súčasnej epidemiologickej situácii žiadame pacientov aby nás pred <strong>každým</strong> vyšetrením kontaktovali najprv telefonicky !!! <br>Ďakujeme za pochopenie.
+        <strong>Upozornenie!</strong> V súčasnej epidemiologickej situácii žiadame pacientov aby nás pred <strong>každým</strong> vyšetrením kontaktovali najprv telefonicky !!! <br>Ďakujeme za pochopenie. <br>Viac informácií o COVID-19 nájdete <a href="#corona">tu</a>
       </div>
       <div class="alert alert-warning">
         <strong>Oznam!</strong> Počas pandémie ospravedlňuje zákonný zástupca dieťaťa jeho absenciu v škole <strong>prvých 5 dní</strong> - <a target="_blank" href='./covid-skoly.pdf'>nariadenie Ministerstva školstva</a>
@@ -79,6 +80,74 @@
 
         </div>
       </div>
+    </div>
+
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Corona ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="corona" class="row corona">
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+          <div class="jumbotron">
+            <h2>COVID-19</h2>
+            <p><strong>Upozornenie!</strong> V súčasnej epidemiologickej situácii žiadame pacientov aby nás pred <strong>každým</strong> vyšetrením kontaktovali najprv telefonicky !!! <br>Ďakujeme za pochopenie.</p>
+            <div class="panel-group">
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="https://korona.gov.sk/faq/">
+                    Časté otázky
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="https://www.uvzsr.sk/index.php?option=com_content&view=category&id=250&layout=blog&Itemid=153">
+                    Úrad verejného zdravotníctva
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="https://korona.gov.sk/">
+                    Koronavírus a Slovensko
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="https://www.minedu.sk/usmernenie-k-postupu-skol-a-skolskych-zariadeni-pri-realizacii-vychovno-vzdelavacieho-procesu-pocas-mimoriadnej-situacie-v-suvislosti-s-ochorenim-covid-19/?fbclid=IwAR2zLOqo677mZky0M05oFR0UT8xv_XMUGTwiCLremC-Jb6Ic5JKyQXLQaIA">
+                    Zákaz organizácie školy v prírode a lyžiarskych výcvikov
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="https://najmama.aktuality.sk/clanok/301822/pediatricka-a-clenka-pandemickej-komisie-elena-prokopova-koronavirus-u-slovenskych-deti-ako-do-skolky-nove-opatrenia/?fbclid=IwAR3ZzgBXSrPMaagsvXIoLOHfOGtCLRyRY8sJA800vDwFTO_4hI2dZWCQfUM">
+                    Hlavná odborníčka o COVIDe a MŠ
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="./COVID/plagat.pdf">
+                    Služba pre detské ušká - rady klinického psychológa
+                  </a>
+                </h4>
+              </div>
+              <div class="panel-heading">
+                <h4>
+                  <a target="_blank" href="./COVID/odporucanie.pdf">
+                    Čo robiť ak mám podozrenie alebo potvrdený COVID-19
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-2"></div>
     </div>
 
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -418,6 +487,7 @@
 
     </div>
 
+
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- Uzitocne kontakty ----------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -597,6 +667,11 @@
           });
         });
       });
+    </script>
+    <script>
+      function focusCorona(element) {
+        element.style.backgroundColor = rgba(227, 183, 9,1);
+      }
     </script>
 
   </body>

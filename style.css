@@ -52,10 +52,16 @@ h1 {
   text-align: center;
 }
 
-.alert a,
-.alert a:visited {
+.alert-warning a,
+.alert-warning a:visited {
   text-decoration: underline;
   color: #8a6d3b;
+}
+
+.alert-danger a,
+.alert-danger a:visited {
+  text-decoration: underline;
+  color: #a94442;
 }
 
 .alert a:hover,
@@ -194,6 +200,16 @@ h1 {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   background-color: white;
   color: #03a668;
+}
+
+#menu-corona a, #menu-corona a:visited {
+  color: white;
+  background-image: linear-gradient(rgba(227, 183, 9,1), rgba(227, 183, 9,1));
+}
+
+#menu-corona a:hover, #menu-corona>.active>a {
+  background:transparent;
+  background-image: linear-gradient(rgba(227, 183, 9,1), rgba(227, 183, 9,1));
 }
 
 .navbar .container-fluid {
@@ -1002,6 +1018,65 @@ h1 {
   }
 }
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ CORONA ------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.corona {
+  background-image: linear-gradient(rgba(0, 201, 125,0.55), rgba(0, 201, 125,0.55)), url(./corona-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#corona .jumbotron {
+  background: transparent;
+  background-image: linear-gradient(rgba(252, 215, 3,0.75), rgba(252, 215, 3,0.75));
+  margin: 15% auto 0 auto;
+  padding: 10% 5%;
+  border-radius: 50px;
+  height: 75%;
+}
+
+#corona .jumbotron h2 {
+  color: black;
+  margin: 0%;
+  font-size: 400%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#corona p {
+  margin-top: 10px;
+  font-size: 130%;
+  text-align: center;
+  font-weight: normal;
+}
+
+#corona .panel-group {
+  overflow: auto;
+}
+
+#corona h4 {
+  margin: 0 auto;
+}
+
+#corona .panel-heading a, #corona .panel-heading a:visited {
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3% 1%;
+  color: black;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#corona .panel-heading a:hover {
+  background-color: rgba(252, 215, 3,1);
+}
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------ UZITOCNE KONTAKTY ------------------------------------------------------------------------------------------- */
@@ -1022,7 +1097,7 @@ h1 {
   border-radius: 15px;
 }
 
-.panel-heading a, .panel-heading a:hover {
+ .panel-heading a, .panel-heading a:hover {
   text-decoration: none;
   text-align: center;
   color: #03a668;
@@ -1041,12 +1116,12 @@ h1 {
   border-radius: 15px;
 }
 
-.panel-heading a:hover, .panel-heading a.active {
+ .panel-heading a:hover, .panel-heading a.active {
   background-color: #03a668;
   color: white;
 }
 
-.panel-group .panel-heading {
+ .panel-group .panel-heading {
   color: #03a668;
   background-color: white;
   border: 1px solid #03a668;
