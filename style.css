@@ -120,6 +120,10 @@ h1 {
   .header {
     background-image: url(./mobile-jumbo.jpg);
   }
+  .header .jumbotron {
+    width: 60%;
+    margin: 30% 23% 0 17%;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -128,6 +132,10 @@ h1 {
   }
   .mapa {
     height: auto;
+  }
+  .header .jumbotron {
+    width: 80%;
+    margin: 30% 3% 0 7%;
   }
 }
 
@@ -347,7 +355,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .fotky .left {
     border-bottom: 3px solid #03a668;
   }
@@ -1034,7 +1042,7 @@ h1 {
   background: transparent;
   background-image: linear-gradient(rgba(252, 215, 3,0.75), rgba(252, 215, 3,0.75));
   margin: 15% auto 0 auto;
-  padding: 10% 5%;
+  padding: 40px 20px;
   border-radius: 50px;
   height: 75%;
 }
@@ -1056,6 +1064,7 @@ h1 {
 
 #corona .panel-group {
   overflow: auto;
+  height: 70%;
 }
 
 #corona h4 {
@@ -1076,6 +1085,31 @@ h1 {
 
 #corona .panel-heading a:hover {
   background-color: rgba(252, 215, 3,1);
+}
+
+@media only screen and (max-width: 550px) {
+  #corona .jumbotron {
+    padding: 20px 10px;
+  }
+  #corona h2 {
+    display: block;
+    box-sizing: border-box;
+    height: 13%;
+  }
+  #corona p {
+    margin: 10px auto;
+    font-size: 100%;
+    text-align: center;
+    font-weight: normal;
+    display: block;
+    box-sizing: border-box;
+    height: 17%;
+    overflow: auto;
+  }
+  #corona .panel-group {
+    height: 65%;
+    margin: auto;
+  }
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
