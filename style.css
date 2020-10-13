@@ -1132,6 +1132,23 @@ h1 {
   background-color: rgba(252, 215, 3,1);
 }
 
+#corona .important a, #corona .important a:visited {
+  color: #ab1410;
+  font-size: 110%;
+  background-color: rgba(242, 145, 110, 0.75);
+}
+
+#corona .important a:hover{
+  color: #ab1410;
+  font-weight: bold;
+  background-color: rgba(242, 145, 110, 1);
+}
+
+#corona .top a {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 @media only screen and (max-width: 550px) {
   #corona .jumbotron {
     padding: 20px 10px;
