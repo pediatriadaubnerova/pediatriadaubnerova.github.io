@@ -294,6 +294,96 @@ h1 {
     }
 }
 
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ KTO SME ----------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+#register {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#covaccine a, #covaccine a:visited, #covaccine a:active {
+
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+  display: block;
+  background-color: white;
+  color: #03a668;
+  width: 60%;
+  border-radius: 15px;
+  margin: 10px 20%;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#covaccine a:hover {
+  text-decoration: none;
+  background-color: rgb(3, 166, 104);
+  color: white;
+}
+
+#covaccine img {
+  width: 60%;
+  margin: 0 20% 20px 20%;
+  border-radius: 15px;
+  border: 6px solid rgb(3, 166, 104);
+}
+
+@media (max-width: 1520px) {
+  #covaccine a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #covaccine a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1170px) {
+  #covaccine a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  #covaccine a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  #covaccine a {
+    font-size: 20px;
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  #covaccine img {
+    width: 90%;
+    margin: 0 5% 20px 5%;
+  }
+}
+
+@media (max-width: 370px) {
+  #covaccine a {
+    font-size: 15px;
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  #covaccine img {
+    width: 90%;
+    margin: 0 5% 20px 5%;
+  }
+}
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------ KTO SME ----------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
