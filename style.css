@@ -306,6 +306,23 @@ h1 {
   font-size: 40px;
 }
 
+#covaccine p {
+  margin-bottom: 0;
+}
+
+#covaccine #heslo {
+  display: block;
+  margin: 15 auto;
+  text-align: center;
+  background-color: #03a668;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 30px;
+  width: 60%;
+  border-radius: 15px;
+}
+
 #covaccine a, #covaccine a:visited, #covaccine a:active {
 
   text-align: center;
@@ -315,9 +332,10 @@ h1 {
   display: block;
   background-color: white;
   color: #03a668;
+  border: 2px solid #03a668;
   width: 60%;
   border-radius: 15px;
-  margin: 10px 20%;
+  margin: 15px 20%;
   padding: 5px;
   text-decoration: none;
 }
@@ -329,8 +347,8 @@ h1 {
 }
 
 #covaccine img {
-  width: 60%;
-  margin: 0 20% 20px 20%;
+  width: 90%;
+  margin: 0 5%;
   border-radius: 15px;
   border: 6px solid rgb(3, 166, 104);
 }
@@ -366,9 +384,13 @@ h1 {
     margin: 10px 5%;
   }
 
-  #covaccine img {
+  #covaccine p {
+    font-size: 20px;
+  }
+
+  #covaccine #heslo {
     width: 90%;
-    margin: 0 5% 20px 5%;
+    margin: 0 5% 10px 5%;
   }
 }
 
@@ -379,9 +401,8 @@ h1 {
     margin: 10px 5%;
   }
 
-  #covaccine img {
-    width: 90%;
-    margin: 0 5% 20px 5%;
+  #covaccine p {
+    font-size: 18px;
   }
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------- */
